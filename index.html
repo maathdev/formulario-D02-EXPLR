@@ -19,7 +19,9 @@
         </header>
         <main>
             <form>
-                <label class="title" for="form-title">Informações Pessoais</label>
+                <fieldset>
+                    <legend class="title">Informações Pessoais</legend>
+                </fieldset>
 
                 <div class="col">
                     <div class="form-wrapper">
@@ -34,29 +36,28 @@
                 </div>
 
                 <div class="form-wrapper">
-                    <label for="form-email">Email</label>
+                    <label for="form-email">Email <span>(digite um email válido)</span></label>
                     <input type="email" id="form-email" required />
                 </div>
 
                 <div class="form-wrapper">
-                    <label for="form-email">Email</label>
-                    <input type="email" id="form-email" required />
+                    <label for="form-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                    <input type="password" id="form-password" required minlength="6" />
                 </div>
 
-                <div class="form-wrapper">
-                    <label for="form-password">Senha</label>
-                    <input type="password" id="form-password" required />
-                </div>
-
-                <label for="form-title">Informações do Mentor</label>
+                <fieldset>
+                    <legend class="title">Informações do Mentor</legend>
+                </fieldset>
                 <div class="form-wrapper">
                     <label for="form-mentor-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
                     <input type="text" id="form-mentor-name" required />
                 </div>
 
-                <label for="form-title">Seus Horários Disponíveis</label>
+                <fieldset>
+                    <legend class="title">Seus Horários Disponíveis</legend>
+                </fieldset>
 
-                <label for="form-subtitle">Primeira Mentoria</label>
+                <label class="subtitle" for="form-subtitle">Primeira Mentoria</label>
                 <div class="col">
                     <div class="form-wrapper">
                         <label for="form-date">Data <span>(DD/MM/AAAA)</span></label>
@@ -74,7 +75,7 @@
                     </div>
                 </div>
 
-                <label for="form-subtitle">Segunda Mentoria</label>
+                <label class="subtitle" for="form-subtitle">Segunda Mentoria</label>
                 <div class="col">
                     <div class="form-wrapper">
                         <label for="form-date">Data <span>(DD/MM/AAAA)</span></label>
